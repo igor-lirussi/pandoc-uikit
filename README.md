@@ -1,12 +1,12 @@
 # pandoc uikit
 
-A pandoc uikit html template. 
+A pandoc uikit html template, to convert any document in a website automatically. 
 
-Includes a sticky adaptive menu and some other nice things:
+Includes a sticky adaptive menu and some other nice things: [Example Result.](https://isiquiz.github.io/ISIQuiz-Report/)
 
 # Install: 
 
-    git clone https://github.com/diversen/pandoc-uikit
+    git clone https://github.com/igor-lirussi/pandoc-uikit
 
 # Example (fetch latest pandoc README and transform to HTML)
 
@@ -18,14 +18,17 @@ Start a server in current directory, e.g.:
 
 Point a browser to [http://localhost:8080](http://localhost:8080)
 
-Or checout the gh-page for this repository, which is the pandoc documentation with this template: 
-
-[http://diversen.github.io/pandoc-uikit](http://diversen.github.io/pandoc-uikit/)
-
 # GitHub Actions
-Clone this repo in your repo as in "Install" section
+Clone this template-repo in your repo as in "Install" section or with the action below:
+``` bash
+      - name: Clones your git repo 
+        uses: actions/checkout@v2
+      - name: Clones Pandoc template repo
+        run: |
+          git clone https://github.com/igor-lirussi/pandoc-uikit
+```
 
-Convert from tex to html
+Convert from tex (or other docs) to html
 ``` bash
       - name: Pandoc tex conversion
         uses: docker://pandoc/latex:latest
