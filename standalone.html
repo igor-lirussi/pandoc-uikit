@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$if(title)$$title$$endif$</title>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
 
 $if(template_css)$
 <link rel="stylesheet" href="$template_css$">
@@ -95,6 +95,7 @@ $if(analytics)$
   ga('create', '$analytics$', 'auto');
   ga('send', 'pageview');
 $endif$
+</script>
             <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
         </div>
     </body>
