@@ -5,8 +5,8 @@ to: html5+lhs
 
 # leave blank for output to stdout:
 output-file: index.html
-input-files:
-- main.tex
+#input-files:
+#- main.tex
 # or you may use input-file: with a single value
 
 # Include options from the specified defaults files.
