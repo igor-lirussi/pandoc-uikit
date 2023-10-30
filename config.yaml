@@ -101,7 +101,6 @@ shift-heading-level-by: 0
 section-divs: true
 identifier-prefix: foo
 title-prefix: ""
-strip-empty-paragraphs: true
 # lf, crlf, or native
 eol: lf
 strip-comments: false
